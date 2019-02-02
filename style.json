@@ -9,7 +9,7 @@
     "vstd": {
       "type": "vector",
       "tiles": [
-        "https://vectortiles.xyz/zxy/casale/{z}/{x}/{y}.pbf"
+        "https://vectortiles.xyz/zxy/tapioca/{z}/{x}/{y}.pbf"
       ],
       "attribution": "OpenStreetMap contributors",
       "maxzoom": 15
