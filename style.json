@@ -560,6 +560,14 @@
       "source": "vstd",
       "source-layer": "place",
       "maxzoom": 11,
+      "filter": [
+        "all",
+        [
+          "==",
+          "capital",
+          "yes"
+        ]
+      ],
       "layout": {
         "text-field": "{name}",
         "text-font": [
