@@ -112,10 +112,10 @@
       }
     },
     {
-      "id": "pg-road",
+      "id": "pg-structure",
       "type": "fill",
       "source": "vstd",
-      "source-layer": "road",
+      "source-layer": "structure",
       "filter": [
         "all",
         [
@@ -125,7 +125,24 @@
         ]
       ],
       "paint": {
-        "fill-color": "rgb(178, 223, 219)"
+        "fill-color": "rgb(255, 249, 196)"
+      }
+    },
+    {
+      "id": "pg-other",
+      "type": "fill",
+      "source": "vstd",
+      "source-layer": "other",
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ]
+      ],
+      "paint": {
+        "fill-color": "rgb(209, 196, 233)"
       }
     },
     {
@@ -146,6 +163,23 @@
       }
     },
     {
+      "id": "pg-road",
+      "type": "fill",
+      "source": "vstd",
+      "source-layer": "road",
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ]
+      ],
+      "paint": {
+        "fill-color": "rgb(178, 223, 219)"
+      }
+    },
+    {
       "id": "pg-route",
       "type": "fill",
       "source": "vstd",
@@ -163,23 +197,6 @@
       }
     },
     {
-      "id": "pg-structure",
-      "type": "fill",
-      "source": "vstd",
-      "source-layer": "structure",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Polygon"
-        ]
-      ],
-      "paint": {
-        "fill-color": "rgb(255, 249, 196)"
-      }
-    },
-    {
       "id": "pg-building",
       "type": "fill",
       "source": "vstd",
@@ -194,23 +211,6 @@
       ],
       "paint": {
         "fill-color": "rgb(255, 224, 178)"
-      }
-    },
-    {
-      "id": "pg-other",
-      "type": "fill",
-      "source": "vstd",
-      "source-layer": "other",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Polygon"
-        ]
-      ],
-      "paint": {
-        "fill-color": "rgb(209, 196, 233)"
       }
     },
     {
