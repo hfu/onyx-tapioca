@@ -95,6 +95,23 @@
       }
     },
     {
+      "id": "pg-place",
+      "type": "fill",
+      "source": "vstd",
+      "source-layer": "place",
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ]
+      ],
+      "paint": {
+        "fill-color": "rgb(197, 202, 233)"
+      }
+    },
+    {
       "id": "pg-road",
       "type": "fill",
       "source": "vstd",
@@ -177,23 +194,6 @@
       ],
       "paint": {
         "fill-color": "rgb(255, 224, 178)"
-      }
-    },
-    {
-      "id": "pg-place",
-      "type": "fill",
-      "source": "vstd",
-      "source-layer": "place",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Polygon"
-        ]
-      ],
-      "paint": {
-        "fill-color": "rgb(197, 202, 233)"
       }
     },
     {
