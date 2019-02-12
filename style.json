@@ -20,7 +20,7 @@
       "data": "https://hfu.github.io/tapioca-extent/extent.geojson"
     }
   },
-  "sprite": "https://hfu.github.io/topographic-zero/sprite",
+  "sprite": "https://hfu.github.io/unite-sprite/sprite",
   "glyphs": "https://vectortiles.xyz/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
