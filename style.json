@@ -504,9 +504,10 @@
     },
     {
       "id": "pt-structure",
-      "type": "circle",
+      "type": "symbol",
       "source": "vstd",
       "source-layer": "structure",
+      "minzoom": 17,
       "filter": [
         "all",
         [
@@ -515,9 +516,13 @@
           "Point"
         ]
       ],
-      "paint": {
-        "circle-color": "rgb(245, 127, 23)",
-        "circle-radius": 2.5
+      "layout": {
+        "icon-image": [
+          "match",
+          ["get", "barrier"],
+          "prison",
+          "default"
+        ]
       }
     },
     {
