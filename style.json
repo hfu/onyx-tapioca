@@ -583,7 +583,7 @@
           ["get", "name"],
           ""
         ],
-        "icon-anchor": [
+        "text-anchor": [
           "match",
           ["get", "capital"],
           "yes",
