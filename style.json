@@ -580,7 +580,7 @@
           "match",
           ["get", "capital"],
           "yes",
-          "{name}"
+          "{name}",
           ""
         ],
         "text-font": [ "sans" ]
