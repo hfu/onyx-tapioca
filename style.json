@@ -390,9 +390,10 @@
     },
     {
       "id": "pt-nature",
-      "type": "circle",
+      "type": "symbol",
       "source": "vstd",
       "source-layer": "nature",
+      "minzoom": 18,
       "filter": [
         "all",
         [
@@ -401,9 +402,14 @@
           "Point"
         ]
       ],
-      "paint": {
-        "circle-color": "rgb(130, 119, 23)",
-        "circle-radius": 2.5
+      "layout": {
+        "icon-image": [
+          "match",
+          ["get", "natural"],
+          "tree",
+          "park",
+          "default"
+        ]
       }
     },
     {
