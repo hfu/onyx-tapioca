@@ -590,6 +590,13 @@
           "left",
           "center"
         ],
+        "text-offset": [
+          "match",
+          ["get", "capital"],
+          "yes",
+          [6, 0],
+          [0, 0]
+        ],
         "text-font": [ "sans" ]
       },
       "paint": {
