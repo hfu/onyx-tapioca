@@ -450,7 +450,7 @@
     },
     {
       "id": "pt-road",
-      "type": "circle",
+      "type": "symbol",
       "source": "vstd",
       "source-layer": "road",
       "filter": [
@@ -461,9 +461,14 @@
           "Point"
         ]
       ],
-      "paint": {
-        "circle-color": "rgb(0, 77, 64)",
-        "circle-radius": 2.5
+      "layout": {
+        "image-icon": [
+          "match",
+          ["get", "highway"],
+          "bus_stop",
+          "bus_stop",
+          "default"
+        ]
       }
     },
     {
