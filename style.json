@@ -534,7 +534,7 @@
     },
     {
       "id": "pt-place",
-      "type": "circle",
+      "type": "symbol",
       "source": "vstd",
       "source-layer": "place",
       "filter": [
@@ -545,9 +545,10 @@
           "Point"
         ]
       ],
+      "layout": {
+        "icon-image": "default"
+      },
       "paint": {
-        "circle-color": "rgb(26, 35, 126)",
-        "circle-radius": 2.5
       }
     },
     {
