@@ -587,15 +587,15 @@
           "match",
           ["get", "capital"],
           "yes",
-          "left",
+          "bottom-left",
           "center"
         ],
         "text-offset": [
           "match",
           ["get", "capital"],
           "yes",
-          ["literal", [1, 0]],
-          ["literal", [1, 0]]
+          ["literal", [0.4, 0]],
+          ["literal", [0, 0]]
         ],
         "text-font": [ "sans" ]
       },
