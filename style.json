@@ -520,6 +520,7 @@
         "icon-image": [
           "match",
           ["get", "barrier"],
+          "gate",
           "prison",
           "default"
         ]
