@@ -617,32 +617,6 @@
       }
     },
     {
-      "id": "symbol-place",
-      "type": "symbol",
-      "source": "vstd",
-      "source-layer": "place",
-      "maxzoom": 11,
-      "filter": [
-        "all",
-        [
-          "==",
-          "capital",
-          "yes"
-        ]
-      ],
-      "layout": {
-        "text-field": "{name}",
-        "text-font": [
-          "sans"
-        ]
-      },
-      "paint": {
-        "text-color": "rgb(0, 0, 0)",
-        "text-halo-color": "rgb(238, 238, 238)",
-        "text-halo-width": 1
-      }
-    },
-    {
       "id": "extent",
       "type": "line",
       "source": "extent",
