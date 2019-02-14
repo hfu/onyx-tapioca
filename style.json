@@ -594,8 +594,8 @@
           "match",
           ["get", "capital"],
           "yes",
-          [6, 0],
-          [0, 0]
+          ["literal", [6, 0]],
+          ["literal", [0, 0]]
         ],
         "text-font": [ "sans" ]
       },
