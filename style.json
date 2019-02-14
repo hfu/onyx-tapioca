@@ -569,7 +569,8 @@
             "match",
             ["get", "capital"],
             "yes",
-            "national_capital"
+            "national_capital",
+            ["literal", null]
           ], 
           [
             "match",
