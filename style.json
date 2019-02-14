@@ -564,10 +564,14 @@
       ],
       "layout": {
         "icon-image": [
-          "match",
-          ["get", "capital"],
-          "yes",
-          "national_capital",
+          "coalesce",
+          [
+            "match",
+            ["get", "capital"],
+            "yes",
+            "national_capital",
+            null
+          ], 
           [
             "match",
             ["get", "leisure"],
