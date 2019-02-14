@@ -576,7 +576,13 @@
             "default"
           ]
         ],
-        "text-field": "{name}",
+        "text-field": [
+          "match",
+          ["get", "capital"],
+          "yes",
+          "{name}"
+          ""
+        ],
         "text-font": [ "sans" ]
       },
       "paint": {
