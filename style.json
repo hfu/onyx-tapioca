@@ -462,7 +462,7 @@
         ]
       ],
       "layout": {
-        "image-icon": [
+        "icon-image": [
           "match",
           ["get", "highway"],
           "bus_stop",
@@ -563,7 +563,19 @@
         ]
       ],
       "layout": {
-        "icon-image": "default"
+        "icon-image": [
+          "match",
+          ["get", "capital"],
+          "yes",
+          "national_capital",
+          [
+            "match",
+            ["get", "leisure"],
+            "stadium",
+            "stadium",
+            "default"
+          ]
+        ] 
       },
       "paint": {
       }
