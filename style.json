@@ -189,6 +189,7 @@
       "type": "fill",
       "source": "vstd",
       "source-layer": "route",
+      "minzoom": 11,
       "filter": [
         "all",
         [
