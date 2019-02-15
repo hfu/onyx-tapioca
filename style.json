@@ -671,6 +671,7 @@
               ["get", "capital"],
               ["get", "place"]
             ],
+            "capital", 0,
             "city", 0,
             "town", 0,
             "village", 0,
@@ -705,11 +706,12 @@
               ["get", "place"]
             ],
             "yes", ["get", "name"],
+            "capital", ["get", "name"],
             "city", ["get", "name"],
             "town", ["get", "name"],
             "village", ["get", "name"],
             "hamlet", ["get", "name"],
-            "isolated_dwellings", ["get", "name"],
+            "isolated_dwelling", ["get", "name"],
             "locality", ["get", "name"],
             ""
           ],
@@ -754,6 +756,7 @@
               ["get", "place"]
             ],
             "yes", 16,
+            "capital", 14,
             "city", 14,
             "town", 12,
             "village", 11,
