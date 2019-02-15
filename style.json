@@ -664,7 +664,11 @@
         ],
         "icon-size": [
           "match",
-          ["get", "place"],
+          [
+            "coalesce",
+            ["get", "capital"],
+            ["get", "place"],
+          ]
           "city", 0,
           "town", 0,
           "village", 0,
