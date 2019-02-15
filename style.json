@@ -569,12 +569,21 @@
           [
             "coalesce",  
             ["get", "capital"],
-            ["get", "leasure"]
+            ["get", "place"],
+            ["get", "leasure"],
+            ["get", "sports"],
+            ["get", "amenity"],
+            ["get", "historic"],
+            ["get", "military"],
+            ["get", "office"],
+            ["get", "craft"],
+            ["get", "tourism"],
+            ["get", "shop"]
           ],
-          "yes",
-          "national_capital",
-          "stadium",
-          "stadium",
+          "yes", "national_capital",
+          "stadium", "stadium",
+          "sports_centre", "sport",
+          "park", "park",
           "default"
         ],
         "text-field": [
