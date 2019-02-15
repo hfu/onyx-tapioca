@@ -189,7 +189,6 @@
       "type": "fill",
       "source": "vstd",
       "source-layer": "route",
-      "minzoom": 11,
       "filter": [
         "all",
         [
@@ -663,35 +662,59 @@
           "default"
         ],
         "icon-size": [
-          "match",
+          "step",
+          ["zoom"],
           [
-            "coalesce",
-            ["get", "capital"],
-            ["get", "place"]
+            "match",
+            [
+              "coalesce",
+              ["get", "capital"],
+              ["get", "place"]
+            ],
+            "city", 0,
+            "town", 0,
+            "village", 0,
+            "hamlet", 0,
+            "isolated_dwelling", 0,
+            "locality", 0,
+            [
+              "case",
+              [
+                "any",
+                ["has", "shop"],
+                ["has", "tourism"],
+                ["has", "craft"],
+                ["has", "amenity"],
+                ["has", "sports"]
+              ],
+              0,
+              1
+            ]
           ],
-          "city", 0,
-          "town", 0,
-          "village", 0,
-          "hamlet", 0,
-          "isolated_dwellings", 0,
-          "locality", 0,
+          18,
           1
         ],
         "text-field": [
-          "match",
+          "step",
+          ["zoom"],
           [
-            "coalesce",
-            ["get", "capital"],
-            ["get", "place"]
+            "match",
+            [
+              "coalesce",
+              ["get", "capital"],
+              ["get", "place"]
+            ],
+            "yes", ["get", "name"],
+            "city", ["get", "name"],
+            "town", ["get", "name"],
+            "village", ["get", "name"],
+            "hamlet", ["get", "name"],
+            "isolated_dwellings", ["get", "name"],
+            "locality", ["get", "name"],
+            ""
           ],
-          "yes", ["get", "name"],
-          "city", ["get", "name"],
-          "town", ["get", "name"],
-          "village", ["get", "name"],
-          "hamlet", ["get", "name"],
-          "isolated_dwellings", ["get", "name"],
-          "locality", ["get", "name"],
-          ""
+          18,
+          ["get", "name"]
         ],
         "text-anchor": [
           "match",
@@ -707,7 +730,23 @@
           ["literal", [0.4, 0]],
           ["literal", [0, 0]]
         ],
-        "text-font": [ "sans" ]
+        "text-font": [ "sans" ],
+        "text-size": [
+          "match",
+          [
+            "coalesce",
+            ["get", "capital"],
+            ["get", "place"]
+          ],
+          "yes", 16,
+          "city", 14,
+          "town", 12,
+          "village", 11,
+          "hamlet", 11,
+          "isolated_dwelling", 11,
+          "locality", 11,
+          14
+        ]
       },
       "paint": {
         "text-color": "rgb(0, 0, 0)",
