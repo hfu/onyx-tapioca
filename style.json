@@ -670,19 +670,11 @@
           [
             "case",
             ["==", ["get", "capital"], "yes"],
-            0,
+            1,
             [
-              "match",
-              [
-                "coalesce",
-                ["get", "place"]
-              ],
-              "city", 0,
-              "town", 0,
-              "village", 0,
-              "hamlet", 0,
-              "isolated_dwelling", 0,
-              "locality", 0,
+              "case",
+              ["has", "place"],
+              0,
               [
                 "case",
                 [
