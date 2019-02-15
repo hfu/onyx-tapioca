@@ -691,7 +691,7 @@
               1
             ]
           ],
-          18,
+          17,
           1
         ],
         "text-field": [
@@ -717,11 +717,17 @@
           ["get", "name"]
         ],
         "text-anchor": [
-          "match",
-          ["get", "capital"],
-          "yes",
-          "bottom-left",
-          "center"
+          "step",
+          ["zoom"],
+          [
+            "match",
+            ["get", "capital"],
+            "yes",
+            "bottom-left",
+            "center"
+          ],
+          17,
+          "top-center"
         ],
         "text-offset": [
           "match",
@@ -732,20 +738,26 @@
         ],
         "text-font": [ "sans" ],
         "text-size": [
-          "match",
+          "step",
+          ["zoom"],
           [
-            "coalesce",
-            ["get", "capital"],
-            ["get", "place"]
+            "match",
+            [
+              "coalesce",
+              ["get", "capital"],
+              ["get", "place"]
+            ],
+            "yes", 16,
+            "city", 14,
+            "town", 12,
+            "village", 11,
+            "hamlet", 11,
+            "isolated_dwelling", 11,
+            "locality", 11,
+            14
           ],
-          "yes", 16,
-          "city", 14,
-          "town", 12,
-          "village", 11,
-          "hamlet", 11,
-          "isolated_dwelling", 11,
-          "locality", 11,
-          14
+          18,
+          9
         ]
       },
       "paint": {
