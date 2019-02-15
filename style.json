@@ -662,11 +662,31 @@
           "travel_agency", "commercial",
           "default"
         ],
+        "icon-size": [
+          "match",
+          ["get", "place"],
+          "city", 0,
+          "town", 0,
+          "village", 0,
+          "hamlet", 0,
+          "isolated_dwellings", 0,
+          "locality" 0,
+          1
+        ],
         "text-field": [
           "match",
-          ["get", "capital"],
-          "yes",
-          ["get", "name"],
+          [
+            "coalesce",
+            ["get", "capital"],
+            ["get", "place"]
+          ],
+          "yes", ["get", "name"],
+          "city", ["get", "name"],
+          "town", ["get", "name"],
+          "village", ["get", "name"],
+          "hamlet", ["get", "name"],
+          "isolated_dwellings", ["get", "name"],
+          "locality", ["get", "name"],
           ""
         ],
         "text-anchor": [
