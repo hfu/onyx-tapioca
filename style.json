@@ -670,7 +670,7 @@
           "village", 0,
           "hamlet", 0,
           "isolated_dwellings", 0,
-          "locality" 0,
+          "locality", 0,
           1
         ],
         "text-field": [
