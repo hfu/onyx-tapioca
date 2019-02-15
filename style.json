@@ -667,8 +667,8 @@
           [
             "coalesce",
             ["get", "capital"],
-            ["get", "place"],
-          ]
+            ["get", "place"]
+          ],
           "city", 0,
           "town", 0,
           "village", 0,
