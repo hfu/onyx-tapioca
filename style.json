@@ -453,6 +453,7 @@
       "type": "symbol",
       "source": "vstd",
       "source-layer": "road",
+      "minzoom: 17,
       "filter": [
         "all",
         [
@@ -468,7 +469,22 @@
           "bus_stop",
           "bus_stop",
           "default"
-        ]
+        ],
+        "text-field": [
+          "step",
+          ["zoom"],
+          "",
+          18,
+          ["get", "name"]
+        ],
+        "text-anchor": "top",
+        "text-font": [ "sans" ],
+        "text-size": 9
+      },
+      "paint": {
+        "text-color": "rgb(0, 0, 0)",
+        "text-halo-color": "rgb(238, 238, 238)",
+        "text-halo-width": 1
       }
     },
     {
