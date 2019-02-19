@@ -479,6 +479,7 @@
         ],
         "text-anchor": "top",
         "text-font": [ "sans" ],
+        "text-offset": [0, 1],
         "text-size": 9
       },
       "paint": {
