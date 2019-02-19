@@ -453,7 +453,7 @@
       "type": "symbol",
       "source": "vstd",
       "source-layer": "road",
-      "minzoom: 17,
+      "minzoom": 17,
       "filter": [
         "all",
         [
