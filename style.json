@@ -309,13 +309,21 @@
       "paint": {
         "line-color": "rgba(242, 230, 241, 0.8)",
         "line-width": [
-          "match",
-          ["get", "railway"],
-          "narrow_gauge", 1.5,
-          "light_rail", 1.5,
-          "rail", {
-            "stops": [[10, 0.5], [12, 2]]
-          }
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10, [
+            "match",
+            ["get", "railway"],
+            "rail", 0.5,
+            1.5
+          ],
+          12, [
+            "match",
+            ["get", "railway"],
+            "rail", 2,
+            1.5
+          ]
         ]
       }
     },
