@@ -299,9 +299,17 @@
           "LineString"
         ],
         [
-          "in",
-          "railway",
-          "subway"
+          "any",
+          [
+            "==",
+            "railway",
+            "subway"
+          ],
+          [
+            "==",
+            "tunnel",
+            "yes"
+          ]
         ]
       ],
       "paint": {
@@ -323,9 +331,22 @@
           "LineString"
         ],
         [
-          "!in",
-          "railway",
-          "subway"
+          "!=",
+          "tunnel",
+          "yes"
+        ],
+        [
+          "any",
+          [
+            "!=",
+            "railway",
+            "subway"
+          ],
+          [
+            "==",
+            "bridge",
+            "viaduct"
+          ]
         ]
       ],
       "paint": {
@@ -352,9 +373,22 @@
           "LineString"
         ],
         [
-          "!in",
-          "railway",
-          "subway"
+          "!=",
+          "tunnel",
+          "yes"
+        ],
+        [
+          "any",
+          [
+            "!=",
+            "railway",
+            "subway"
+          ],
+          [
+            "==",
+            "bridge",
+            "viaduct"
+          ]
         ]
       ],
       "paint": {
