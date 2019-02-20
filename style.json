@@ -316,12 +316,10 @@
           "LineString"
         ]
       ],
-      {
-        "paint": {
-          "line-color": "rgb(61, 156, 204)",
-          "line-width": 1,
-          "line-dasharray": [2, 4]
-        }
+      "paint": {
+        "line-color": "rgb(61, 156, 204)",
+        "line-width": 1,
+        "line-dasharray": [2, 4]
       }
     },
     {
