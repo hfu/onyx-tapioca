@@ -287,7 +287,57 @@
       }
     },
     {
-      "id": "ls-railway",
+      "id": "ls-railway-halo",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "railway",
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "in",
+          "railway",
+          "narrow_gauge",
+          "light_rail",
+          "rail"
+        ]
+      ],
+      "paint": {
+        "line-color": "rgba(242, 230, 241, 0.8)",
+        "line-width": [
+          "match",
+          ["get", "railway"],
+          "narrow_gauge", 1.5,
+          "light_rail", 1.5,
+          "rail", {
+            "stops": [[10, 0.5], [12, 2]]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ls-railway-line",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "railway",
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ]
+      ],
+      "paint": {
+        "line-color": "rgb(156, 39, 176)"
+      }
+    },
+    {
+      "id": "ls-railway-dash",
       "type": "line",
       "source": "vstd",
       "source-layer": "railway",
