@@ -586,7 +586,7 @@
     },
     {
       "id": "pt-railway",
-      "type": "circle",
+      "type": "symbol",
       "source": "vstd",
       "source-layer": "railway",
       "filter": [
@@ -597,9 +597,30 @@
           "Point"
         ]
       ],
+      "layout": {
+        "icon-image": [
+          "match",
+          ["get", "railway"],
+          "station",
+          "railway_station",
+          "default"
+        ],
+        "text-field": [
+          "step",
+          ["zoom"],
+          "",
+          15,
+          ["get", "name"]
+        ],
+        "text-anchor": "top",
+        "text-font": [ "sans" ],
+        "text-offset": [0, 1],
+        "text-size": 12
+      },
       "paint": {
-        "circle-color": "rgb(74, 20, 140)",
-        "circle-radius": 2.5
+        "text-color": "rgb(0, 0, 0)",
+        "text-halo-color": "rgb(238, 238, 238)",
+        "text-halo-width": 1
       }
     },
     {
