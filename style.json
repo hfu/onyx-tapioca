@@ -287,7 +287,7 @@
       }
     },
     {
-      "id": "ls-railway-halo",
+      "id": "ls-railway-line",
       "type": "line",
       "source": "vstd",
       "source-layer": "railway",
@@ -301,47 +301,22 @@
         [
           "in",
           "railway",
+          "monorail",
+          "tram",
           "narrow_gauge",
           "light_rail",
           "rail"
         ]
       ],
       "paint": {
-        "line-color": "rgba(242, 230, 241, 0.8)",
+        "line-color": "rgb(128, 102, 125)",
         "line-width": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          10, [
-            "match",
-            ["get", "railway"],
-            "rail", 0.5,
-            1.5
-          ],
-          12, [
-            "match",
-            ["get", "railway"],
-            "rail", 2,
-            1.5
-          ]
+          "match",
+          ["get", "railway"],
+          "narrow_gauge", 0.5,
+          "light_rail", 0.5,
+          1
         ]
-      }
-    },
-    {
-      "id": "ls-railway-line",
-      "type": "line",
-      "source": "vstd",
-      "source-layer": "railway",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ]
-      ],
-      "paint": {
-        "line-color": "rgb(156, 39, 176)"
       }
     },
     {
@@ -355,10 +330,25 @@
           "==",
           "$type",
           "LineString"
+        ],
+        [
+          "in",
+          "railway",
+          "subway",
+          "narrow_gauge",
+          "light_rail",
+          "rail"
         ]
       ],
       "paint": {
-        "line-color": "rgb(156, 39, 176)"
+        "line-color": "rgb(128, 102, 125)",
+        "line-width": [
+          "match",
+          ["get", "railway"],
+          "rail", 2,
+          1
+        ],
+        "line-dasharray": [1, 5]
       }
     },
     {
