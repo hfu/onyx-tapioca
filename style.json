@@ -319,7 +319,7 @@
       "paint": {
         "line-color": "rgb(61, 156, 204)",
         "line-width": 1,
-        "line-dasharray": [8, 8]
+        "line-dasharray": [6, 6]
       }
     },
     {
