@@ -863,7 +863,7 @@
             ["literal", [0.4, 0]],
             ["literal", [0, 0]]
           ],
-          18,
+          17,
           ["literal", [0, 1]]
         ],
         "text-font": [ "sans" ],
@@ -873,24 +873,24 @@
           [
             "case",
             ["==", ["get", "capital"], "yes"],
-            18,
+            20,
             [
               "match",
               [
                 "coalesce",
                 ["get", "place"]
               ],
-              "city", 16,
-              "town", 12,
-              "village", 11,
-              "hamlet", 11,
-              "isolated_dwelling", 11,
-              "locality", 11,
+              "city", 18,
+              "town", 16,
+              "village", 12,
+              "hamlet", 12,
+              "isolated_dwelling", 12,
+              "locality", 12,
               14
             ]
           ],
           18,
-          9
+          10
         ]
       },
       "paint": {
