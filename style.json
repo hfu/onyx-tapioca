@@ -357,7 +357,7 @@
         "line-color": "rgb(255, 255, 255)",
         "line-width": [
           "interpolate",
-          ["exponential", 2],
+          ["exponential", 1.2],
           ["zoom"],
           12, 1, 
           22, 16
