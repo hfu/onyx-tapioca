@@ -274,6 +274,11 @@
       "type": "line",
       "source": "vstd",
       "source-layer": "road",
+      "filter": [
+        ">",
+        ["zoom"],
+        14
+      ],
       "layout": {
         "line-cap": "round",
         "line-join": "round"
@@ -304,7 +309,7 @@
           ["zoom"],
           6,
           1,
-          22,
+          20,
           [
             "match",
             ["get", "highway"],
@@ -356,7 +361,7 @@
           ["zoom"],
           6,
           1,
-          22,
+          20,
           [
             "match",
             ["get", "highway"],
