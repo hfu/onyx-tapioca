@@ -279,8 +279,26 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgb(235, 235, 235)", 
-        "line-width": 1
+        "line-color": [
+          "match",
+          ["get", "highway"],
+          ["motorway"],
+          ["rgb", 204, 61, 118],
+          ["trunk", "motorway_link"],
+          ["rgb", 204, 61, 118],
+          ["primary", "trunk_link"],
+          ["rgb", 204, 122, 155],
+          ["secondary", "primary_link"],
+          ["rgb", 204, 122, 155],
+          ["tertiary", "secondary_link"],
+          ["rgb", 194, 172, 181],
+          ["road", "tertiary_link"],
+          ["rgb", 204, 204, 204],
+          ["residential", "track", "unclassified"],
+          ["rgb", 156, 121, 135],
+          ["rgb", 225, 225, 225]
+        ], 
+        "line-width": 10
       }
     },
     {
@@ -308,7 +326,7 @@
         ],
         "line-width": [
           "interpolate",
-          ["exponential", 2],
+          ["exponential", 1.2],
           ["zoom"],
           6,
           1,
