@@ -292,7 +292,8 @@
       },
       "paint": {
         "line-color": [
-          "match", ["get", "highway"],
+          "match",
+          ["get", "highway"],
           [
             "path", "pedestrian", "footway", "cycleway",
             "living_street", "steps", "bridleway", "service"
@@ -311,7 +312,25 @@
           12,
           1,
           22,
-          18
+          [
+            "match",
+            ["get", "highway"],
+            ["motorway"],
+            30,
+            ["trunk", "motorway_link"],
+            28,
+            ["primary", "trunk_link"],
+            26,
+            ["secondary", "primary_link"],
+            24,
+            ["tertiary", "secondary_link"],
+            22,
+            ["road", "tertiary_link"],
+            20,
+            ["residential", "track", "unclassified"],
+            18,
+            16
+          ]
         ]
       }
     },
