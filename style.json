@@ -306,7 +306,7 @@
         ],
         "line-width": [
           "interpolate",
-          ["exponential", 2],
+          ["linear"],
           ["zoom"],
           6,
           1,
