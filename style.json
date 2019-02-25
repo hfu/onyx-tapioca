@@ -308,7 +308,7 @@
         ],
         "line-width": [
           "interpolate",
-          ["exponential", 2],
+          ["exponential", 1.6],
           ["zoom"],
           6,
           1,
@@ -357,7 +357,7 @@
         "line-color": "rgb(255, 255, 255)",
         "line-width": [
           "interpolate",
-          ["exponential", 1.2],
+          ["exponential", 2],
           ["zoom"],
           12, 1, 
           22, 16
