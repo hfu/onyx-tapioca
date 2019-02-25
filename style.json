@@ -308,7 +308,7 @@
         ],
         "line-width": [
           "interpolate",
-          ["exponential", 1.4],
+          ["exponential", 2],
           ["zoom"],
           6,
           1,
@@ -317,7 +317,7 @@
             "match",
             ["get", "highway"],
             ["motorway"],
-            30,
+            90,
             ["trunk", "motorway_link"],
             28,
             ["primary", "trunk_link"],
