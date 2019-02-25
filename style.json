@@ -291,6 +291,13 @@
         "line-join": "round"
       },
       "paint": {
+        "line-color": ["match", ["get", "highway"],
+        [
+          "path", "pedestrian", "footway", "cycleway",
+          "living_street", "steps", "bridleway", "service"
+        ],
+        "rgb(235, 235, 235)",
+        "rgb(153, 153, 153)"]
       }
     },
     {
@@ -299,8 +306,7 @@
       "source": "vstd",
       "source-layer": "road",
       "filter": [
-        "match",
-        ["get", "highway"],
+        "match", ["get", "highway"],
         [
           "path", "pedestrian", "footway", "cycleway", 
           "living_street", "steps", "bridleway", "service"
