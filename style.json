@@ -291,13 +291,28 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": ["match", ["get", "highway"],
-        [
-          "path", "pedestrian", "footway", "cycleway",
-          "living_street", "steps", "bridleway", "service"
+        "line-color": [
+          "match", ["get", "highway"],
+          [
+            "path", "pedestrian", "footway", "cycleway",
+            "living_street", "steps", "bridleway", "service"
+          ],
+          "rgb(235, 235, 235)",
+          ["residential", "track", "unclassified"],
+          "rgb(235, 235, 235)",
+          ["road", "tertiary_link"],
+          "rgb(255, 255, 255)",
+          "rgb(153, 153, 153)"
         ],
-        "rgb(235, 235, 235)",
-        "rgb(153, 153, 153)"]
+        "line-width": [
+          "interpolate",
+          ["exponential", 2],
+          ["zoom"],
+          12,
+          1,
+          22,
+          18
+        ]
       }
     },
     {
@@ -306,7 +321,8 @@
       "source": "vstd",
       "source-layer": "road",
       "filter": [
-        "match", ["get", "highway"],
+        "match",
+        ["get", "highway"],
         [
           "path", "pedestrian", "footway", "cycleway", 
           "living_street", "steps", "bridleway", "service"
@@ -319,26 +335,14 @@
       },
       "paint": {
         "line-color": "rgb(255, 255, 255)",
-        "line-width": ["interpolate", ["exponential", 2],
-          ["zoom"], 15, 2, 22, 16],
+        "line-width": [
+          "interpolate",
+          ["exponential", 2],
+          ["zoom"],
+          12, 1, 
+          22, 16
+        ],
         "line-dasharray": [1.5, 1.5]
-      }
-    },
-    {
-      "id": "ls-road",
-      "type": "line",
-      "source": "vstd",
-      "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ]
-      ],
-      "paint": {
-        "line-color": "rgb(0, 150, 136)"
       }
     },
     {
