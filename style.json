@@ -335,20 +335,20 @@
             "match",
             ["get", "highway"],
             ["motorway"],
-            90,
+            288,
             ["trunk", "motorway_link"],
-            28,
+            208,
             ["primary", "trunk_link"],
-            26,
+            208,
             ["secondary", "primary_link"],
-            24,
+            192,
             ["tertiary", "secondary_link"],
-            22,
+            192,
             ["road", "tertiary_link"],
-            20,
+            160,
             ["residential", "track", "unclassified"],
-            18,
-            16
+            144,
+            128 
           ]
         ]
       }
