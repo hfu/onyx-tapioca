@@ -274,6 +274,10 @@
       "type": "line",
       "source": "vstd",
       "source-layer": "road",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
       "paint": {
       }
     },
@@ -282,6 +286,10 @@
       "type": "line",
       "source": "vstd",
       "source-layer": "road",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
       "paint": {
       }
     },
@@ -299,10 +307,14 @@
         ],
         true, false
       ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
       "paint": {
         "line-color": "rgb(255, 255, 255)",
         "line-width": ["interpolate", ["linear"],
-          ["zoom"], 12, 0.75, 19, 16],
+          ["zoom"], 15, 1, 19, 16],
         "line-dasharray": [1.5, 1.5]
       }
     },
