@@ -308,12 +308,12 @@
         true, false
       ],
       "layout": {
-        "line-cap": "round",
+        "line-cap": "butt",
         "line-join": "round"
       },
       "paint": {
         "line-color": "rgb(255, 255, 255)",
-        "line-width": ["interpolate", ["linear"],
+        "line-width": ["interpolate", ["exponential", 2],
           ["zoom"], 15, 1, 19, 16],
         "line-dasharray": [1.5, 1.5]
       }
