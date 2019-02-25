@@ -279,6 +279,8 @@
         "line-join": "round"
       },
       "paint": {
+        "line-color": "rgb(235, 235, 235)", 
+        "line-width": 1
       }
     },
     {
@@ -306,7 +308,7 @@
         ],
         "line-width": [
           "interpolate",
-          ["linear"],
+          ["exponential", 2],
           ["zoom"],
           6,
           1,
