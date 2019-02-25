@@ -294,16 +294,15 @@
         "line-color": [
           "match",
           ["get", "highway"],
-          [
-            "path", "pedestrian", "footway", "cycleway",
-            "living_street", "steps", "bridleway", "service"
-          ],
-          "rgb(235, 235, 235)",
-          ["residential", "track", "unclassified"],
-          "rgb(235, 235, 235)",
+          ["motorway", "trunk", "motorway_link"],
+          "rgb(204, 122, 155)",
+          ["primary", "trunk_link", "secondary", "primary_link"],
+          "rgb(204, 184, 192)",
+          ["tertiary", "secondary_link"],
+          "rgb(223, 208, 214)",
           ["road", "tertiary_link"],
           "rgb(255, 255, 255)",
-          "rgb(153, 153, 153)"
+          "rgb(235, 235, 235)"
         ],
         "line-width": [
           "interpolate",
