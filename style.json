@@ -314,7 +314,7 @@
       "paint": {
         "line-color": "rgb(255, 255, 255)",
         "line-width": ["interpolate", ["exponential", 2],
-          ["zoom"], 15, 1, 22, 16],
+          ["zoom"], 15, 2, 22, 16],
         "line-dasharray": [1.5, 1.5]
       }
     },
