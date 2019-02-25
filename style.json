@@ -309,7 +309,7 @@
           ["zoom"],
           6,
           1,
-          21,
+          22,
           [
             "match",
             ["get", "highway"],
@@ -361,7 +361,7 @@
           ["zoom"],
           6,
           1,
-          21,
+          22,
           [
             "match",
             ["get", "highway"],
@@ -408,10 +408,10 @@
           "interpolate",
           ["exponential", 2],
           ["zoom"],
-          12, 1, 
-          22, 16
+          6, 1, 
+          22, 128
         ],
-        "line-dasharray": [1.5, 1.5]
+        "line-dasharray": [2, 2]
       }
     },
     {
