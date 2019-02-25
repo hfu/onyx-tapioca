@@ -308,7 +308,7 @@
           "interpolate",
           ["exponential", 2],
           ["zoom"],
-          12,
+          6,
           1,
           22,
           [
