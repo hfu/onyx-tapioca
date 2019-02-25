@@ -411,7 +411,7 @@
           6, 1, 
           22, 128
         ],
-        "line-dasharray": [2, 2]
+        "line-dasharray": [1.5, 1.5]
       }
     },
     {
