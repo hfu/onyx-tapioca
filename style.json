@@ -298,7 +298,33 @@
           ["rgb", 156, 121, 135],
           ["rgb", 225, 225, 225]
         ], 
-        "line-width": 10
+        "line-width": [
+          "interpolate",
+          ["exponential", 2],
+          ["zoom"],
+          6,
+          1,
+          22,
+          [
+            "match",
+            ["get", "highway"],
+            ["motorway"],
+            272,
+            ["trunk", "motorway_link"],
+            240,
+            ["primary", "trunk_link"],
+            240,
+            ["secondary", "primary_link"],
+            224,
+            ["tertiary", "secondary_link"],
+            224,
+            ["road", "tertiary_link"],
+            176,
+            ["residential", "track", "unclassified"],
+            160,
+            144
+          ]
+        ] 
       }
     },
     {
@@ -335,7 +361,7 @@
             "match",
             ["get", "highway"],
             ["motorway"],
-            288,
+            240,
             ["trunk", "motorway_link"],
             208,
             ["primary", "trunk_link"],
