@@ -270,6 +270,43 @@
       }
     },
     {
+      "id": "ls-road-case",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "road",
+      "paint": {
+      }
+    },
+    {
+      "id": "ls-road-line",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "road",
+      "paint": {
+      }
+    },
+    {
+      "id": "ls-road-dash",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "road",
+      "filter": [
+        "match",
+        ["get", "highway"],
+        [
+          "path", "pedestrian", "footway", "cycleway", 
+          "living_street", "steps", "bridleway", "service"
+        ],
+        true, false
+      ],
+      "paint": {
+        "line-color": "rgb(255, 255, 255)",
+        "line-width": ["step",
+          ["zoom"], 1.8, 12, 0.75, 19, 16],
+        "line-dasharray": [1.5, 1.5]
+      }
+    },
+    {
       "id": "ls-road",
       "type": "line",
       "source": "vstd",
