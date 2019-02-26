@@ -580,7 +580,7 @@
       "filter": [
         "match",
         ["get", "highway"],
-        ["motorway_link"],
+        ["motorway"],
         true,
         false
       ],
