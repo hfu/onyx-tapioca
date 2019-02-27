@@ -311,7 +311,7 @@
         ["get", "highway"],
         [
           "path", "pedestrian", "footway", "cycleway", 
-          "living_street", "steps", "bridleway", "service"
+          "steps", "bridleway"
         ],
         true,
         false
