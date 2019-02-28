@@ -57,32 +57,6 @@
       }
     },
     {
-      "id": "pg-water",
-      "type": "fill",
-      "source": "vstd",
-      "source-layer": "water",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Polygon"
-        ]
-      ],
-      "paint": {
-        "fill-color": [
-          "match",
-          [
-            "get",
-            "natural"
-          ],
-          "wetland",
-          "rgb(227, 242, 253)",
-          "rgb(187, 222, 251)"
-        ]
-      }
-    },
-    {
       "id": "pg-boundary",
       "type": "fill",
       "source": "vstd",
@@ -250,6 +224,32 @@
       ],
       "paint": {
         "line-color": "rgb(33, 150, 243)"
+      }
+    },
+    {
+      "id": "pg-water",
+      "type": "fill",
+      "source": "vstd",
+      "source-layer": "water",
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ]
+      ],
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "natural"
+          ],
+          "wetland",
+          "rgb(227, 242, 253)",
+          "rgb(187, 222, 251)"
+        ]
       }
     },
     {
