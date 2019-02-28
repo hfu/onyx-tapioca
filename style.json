@@ -2424,8 +2424,8 @@
         ]
       ],
       "paint": {
-        "circle-color": "rgb(230, 81, 0)",
-        "circle-radius": 2.5
+        "circle-color": "rgb(222, 215, 215)",
+        "circle-radius": 2
       }
     },
     {
