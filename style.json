@@ -311,9 +311,10 @@
         ["get", "highway"],
         [
           "path", "pedestrian", "footway", "cycleway", 
-          "living_street", "steps", "bridleway", "service"
+          "steps", "bridleway"
         ],
-        true, false
+        true,
+        false
       ],
       "layout": {
         "line-cap": "butt",
@@ -325,8 +326,10 @@
           "interpolate",
           ["exponential", 2],
           ["zoom"],
-          6, 1, 
-          22, 64 
+          6,
+          1, 
+          22,
+          64 
         ],
         "line-dasharray": [1.5, 1.5]
       }
@@ -337,9 +340,22 @@
       "source": "vstd",
       "source-layer": "road",
       "filter": [
-        ">",
-        ["zoom"],
-        14
+        "all",
+        [
+          ">",
+          ["zoom"],
+          14
+        ],
+        [
+          "match",
+          ["get", "highway"],
+          [ 
+            "path", "pedestrian", "footway", "cycleway", 
+            "living_street", "steps", "bridleway", "service"
+          ],
+          false,
+          true
+        ]
       ],
       "layout": {
         "line-cap": "round",
