@@ -300,7 +300,8 @@
       ],
       "paint": {
         "line-color": "rgb(92, 99, 102)",
-        "line-dasharray": [4, 1]
+        "line-dasharray": [4, 1],
+        "line-width": 2
       }
     },
     {
@@ -328,7 +329,8 @@
       ],
       "paint": {
         "line-color": "rgb(92, 99, 102)",
-        "line-dasharray": [6, 1, 1, 1, 1, 1]
+        "line-dasharray": [6, 1, 1, 1, 1, 1],
+        "line-width": 2
       }
     },
     {
