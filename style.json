@@ -253,7 +253,7 @@
       }
     },
     {
-      "id": "ls-boundary",
+      "id": "ls-boundary-other",
       "type": "line",
       "source": "vstd",
       "source-layer": "boundary",
@@ -263,10 +263,72 @@
           "==",
           "$type",
           "LineString"
+        ],
+        [
+          "!=",
+          "admin_level",
+          2
         ]
       ],
       "paint": {
-        "line-color": "rgb(244, 67, 54)"
+        "line-color": "rgb(92, 99, 102)",
+        "line-dasharray": [4, 1, 1, 1]
+      }
+    },
+    {
+      "id": "ls-boundary-international-disputed",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "boundary",
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "==",
+          "admin_level",
+          2
+        ],
+        [
+          "==",
+          "disputed",
+          "yes"
+        ]
+      ],
+      "paint": {
+        "line-color": "rgb(92, 99, 102)",
+        "line-dasharray": [4, 1]
+      }
+    },
+    {
+      "id": "ls-boundary-international",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "boundary",
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "==",
+          "admin_level",
+          2
+        ],
+        [
+          "!=",
+          "disputed",
+          "yes"
+        ]
+      ],
+      "paint": {
+        "line-color": "rgb(92, 99, 102)",
+        "line-dasharray": [6, 1, 1, 1, 1, 1]
       }
     },
     {
