@@ -180,7 +180,7 @@
       "type": "fill",
       "source": "vstd",
       "source-layer": "building",
-      "minzoom": 17,
+      "minzoom": 16,
       "filter": [
         "all",
         [
