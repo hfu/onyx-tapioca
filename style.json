@@ -706,7 +706,7 @@
         ]
       ],
       "layout": {
-        "line-cap": "round",
+        "line-cap": "butt",
         "line-join": "round"
       },
       "paint": {
@@ -764,7 +764,7 @@
       "source": "vstd",
       "source-layer": "road",
       "layout": {
-        "line-cap": "round",
+        "line-cap": "butt",
         "line-join": "round"
       },
       "filter": [
@@ -799,7 +799,7 @@
       "source": "vstd",
       "source-layer": "road",
       "layout": {
-        "line-cap": "round",
+        "line-cap": "butt",
         "line-join": "round"
       },
       "filter": [
@@ -834,7 +834,7 @@
       "source": "vstd",
       "source-layer": "road",
       "layout": {
-        "line-cap": "round",
+        "line-cap": "butt",
         "line-join": "round"
       },
       "filter": [
@@ -869,7 +869,7 @@
       "source": "vstd",
       "source-layer": "road",
       "layout": {
-        "line-cap": "round",
+        "line-cap": "butt",
         "line-join": "round"
       },
       "filter": [
@@ -904,7 +904,7 @@
       "source": "vstd",
       "source-layer": "road",
       "layout": {
-        "line-cap": "round",
+        "line-cap": "butt",
         "line-join": "round"
       },
       "filter": [
@@ -939,7 +939,7 @@
       "source": "vstd",
       "source-layer": "road",
       "layout": {
-        "line-cap": "round",
+        "line-cap": "butt",
         "line-join": "round"
       },
       "filter": [
@@ -974,7 +974,7 @@
       "source": "vstd",
       "source-layer": "road",
       "layout": {
-        "line-cap": "round",
+        "line-cap": "butt",
         "line-join": "round"
       },
       "filter": [
