@@ -176,6 +176,25 @@
       }
     },
     {
+      "id": "pg-building-shadow",
+      "type": "fill",
+      "source": "vstd",
+      "source-layer": "building",
+      "minzoom": 17,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ]
+      ],
+      "paint": {
+        "fill-color": "rgb(131, 124, 124)",
+        "fill-translate": [2, 2]
+      }
+    },
+    {
       "id": "pg-building",
       "type": "fill",
       "source": "vstd",
@@ -189,7 +208,26 @@
         ]
       ],
       "paint": {
-        "fill-color": "rgb(255, 224, 178)"
+        "fill-color": "rgb(222, 215, 215)"
+      }
+    },
+    {
+      "id": "pg-building-outline",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "building",
+      "minzoom": 15,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ]
+      ],
+      "paint": {
+        "line-color": "rgb(183, 174, 174)",
+        "line-width": 0.15
       }
     },
     {
