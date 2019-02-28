@@ -261,12 +261,12 @@
         "all",
         [
           "==",
-          "$type",
+          ["geometry-type"],
           "LineString"
         ],
         [
           "!=",
-          "admin_level",
+          ["get", "admin_level"],
           2
         ]
       ],
@@ -284,17 +284,17 @@
         "all",
         [
           "==",
-          "$type",
+          ["geometry-type"],
           "LineString"
         ],
         [
           "==",
-          "admin_level",
+          ["get", "admin_level"],
           2
         ],
         [
           "==",
-          "disputed",
+          ["get", "disputed"],
           "yes"
         ]
       ],
@@ -312,17 +312,17 @@
         "all",
         [
           "==",
-          "$type",
+          ["geometry-type"],
           "LineString"
         ],
         [
           "==",
-          "admin_level",
+          ["get", "admin_level"],
           2
         ],
         [
           "!=",
-          "disputed",
+          ["get", "disputed"],
           "yes"
         ]
       ],
