@@ -176,72 +176,6 @@
       }
     },
     {
-      "id": "pg-building-shadow",
-      "type": "fill",
-      "source": "vstd",
-      "source-layer": "building",
-      "minzoom": 16,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Polygon"
-        ],
-        [
-          "!=",
-          "layer",
-          "-1"
-        ]
-      ],
-      "paint": {
-        "fill-color": "rgb(131, 124, 124)",
-        "fill-translate": [2, 2]
-      }
-    },
-    {
-      "id": "pg-building",
-      "type": "fill",
-      "source": "vstd",
-      "source-layer": "building",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Polygon"
-        ]
-      ],
-      "paint": {
-        "fill-color": [
-          "match",
-          ["get", "layer"],
-          ["-1"],
-          "rgb(238, 238, 238)",
-          "rgb(222, 215, 215)"
-        ]
-      }
-    },
-    {
-      "id": "pg-building-outline",
-      "type": "line",
-      "source": "vstd",
-      "source-layer": "building",
-      "minzoom": 14,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Polygon"
-        ]
-      ],
-      "paint": {
-        "line-color": "rgb(183, 174, 174)",
-        "line-width": 1
-      }
-    },
-    {
       "id": "ls-nature",
       "type": "line",
       "source": "vstd",
@@ -2226,6 +2160,72 @@
       ],
       "paint": {
         "line-color": "rgb(103, 58, 183)"
+      }
+    },
+    {
+      "id": "pg-building-shadow",
+      "type": "fill",
+      "source": "vstd",
+      "source-layer": "building",
+      "minzoom": 16,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ],
+        [
+          "!=",
+          "layer",
+          "-1"
+        ]
+      ],
+      "paint": {
+        "fill-color": "rgb(131, 124, 124)",
+        "fill-translate": [2, 2]
+      }
+    },
+    {
+      "id": "pg-building",
+      "type": "fill",
+      "source": "vstd",
+      "source-layer": "building",
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ]
+      ],
+      "paint": {
+        "fill-color": [
+          "match",
+          ["get", "layer"],
+          ["-1"],
+          "rgb(238, 238, 238)",
+          "rgb(222, 215, 215)"
+        ]
+      }
+    },
+    {
+      "id": "pg-building-outline",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "building",
+      "minzoom": 14,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ]
+      ],
+      "paint": {
+        "line-color": "rgb(183, 174, 174)",
+        "line-width": 1
       }
     },
     {
