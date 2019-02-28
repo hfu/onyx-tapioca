@@ -216,7 +216,7 @@
       "type": "line",
       "source": "vstd",
       "source-layer": "building",
-      "minzoom": 15,
+      "minzoom": 14,
       "filter": [
         "all",
         [
