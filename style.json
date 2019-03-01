@@ -561,7 +561,13 @@
         "match",
         ["get", "highway"],
         ["residential", "track", "unclassified"],
-        true,
+        [
+          "match",
+          ["get", "layer"],
+          ["-1"],
+          false,
+          true
+        ],
         false
       ],
       "paint": {
@@ -590,7 +596,13 @@
         "match",
         ["get", "highway"],
         ["road", "tertiary_link"],
-        true,
+        [
+          "match",
+          ["get", "layer"],
+          ["-1"],
+          false,
+          true
+        ],
         false
       ],
       "paint": {
@@ -619,7 +631,13 @@
         "match",
         ["get", "highway"],
         ["tertiary", "secondary_link"],
-        true,
+        [
+          "match",
+          ["get", "layer"],
+          ["-1"],
+          false,
+          true
+        ],
         false
       ],
       "paint": {
@@ -648,7 +666,13 @@
         "match",
         ["get", "highway"],
         ["secondary", "primary_link"],
-        true,
+        [
+          "match",
+          ["get", "layer"],
+          ["-1"],
+          false,
+          true
+        ],
         false
       ],
       "paint": {
@@ -677,7 +701,13 @@
         "match",
         ["get", "highway"],
         ["primary", "trunk_link"],
-        true,
+        [
+          "match",
+          ["get", "layer"],
+          ["-1"],
+          false,
+          true
+        ],
         false
       ],
       "paint": {
@@ -706,7 +736,13 @@
         "match",
         ["get", "highway"],
         ["trunk", "motorway_link"],
-        true,
+        [
+          "match",
+          ["get", "layer"],
+          ["-1"],
+          false,
+          true
+        ],
         false
       ],
       "paint": {
@@ -735,7 +771,13 @@
         "match",
         ["get", "highway"],
         ["motorway"],
-        true,
+        [
+          "match",
+          ["get", "layer"],
+          ["-1"],
+          false,
+          true
+        ],
         false
       ],
       "paint": {
