@@ -395,7 +395,7 @@
         ],
         [
           "match",
-          ["get", "level"],
+          ["get", "layer"],
           ["-1"],
           true,
           false
@@ -479,7 +479,7 @@
         ],
         [
           "match",
-          ["get", "level"],
+          ["get", "layer"],
           ["-1"],
           false,
           true
