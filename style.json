@@ -2176,9 +2176,9 @@
           "Polygon"
         ],
         [
-          "!=",
+          "!in",
           "building",
-          "train_station"
+          "train_station", "roof"
         ],
         [
           "!=",
@@ -2204,9 +2204,9 @@
           "Polygon"
         ],
         [
-          "!=",
+          "!in",
           "building",
-          "train_station"
+          "train_station", "roof"
         ]
       ],
       "paint": {
@@ -2232,9 +2232,9 @@
           "Polygon"
         ],
         [
-          "==",
+          "in",
           "building",
-          "train_station"
+          "train_station", "roof"
         ]
       ],
       "paint": {
