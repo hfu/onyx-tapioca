@@ -2183,7 +2183,14 @@
       ],
       "paint": {
         "fill-color": "rgb(131, 124, 124)",
-        "fill-translate": [2, 2]
+        "fill-translate": [2, 2],
+        "fill-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          16, 1,
+          17, 0.7
+        ]
       }
     },
     {
@@ -2212,7 +2219,7 @@
           ["linear"],
           ["zoom"],
           16, 1,
-          17, 0.3
+          17, 0.7
         ]
       }
     },
