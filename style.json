@@ -2177,20 +2177,18 @@
         ],
         [
           "!=",
+          "building",
+          "train_station"
+        ],
+        [
+          "!=",
           "layer",
           "-1"
         ]
       ],
       "paint": {
         "fill-color": "rgb(131, 124, 124)",
-        "fill-translate": [2, 2],
-        "fill-opacity": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          16, 1,
-          17, 0.7
-        ]
+        "fill-translate": [2, 2]
       }
     },
     {
@@ -2204,6 +2202,39 @@
           "==",
           "$type",
           "Polygon"
+        ],
+        [
+          "!=",
+          "building",
+          "train_station"
+        ]
+      ],
+      "paint": {
+        "fill-color": [
+          "match",
+          ["get", "layer"],
+          ["-1"],
+          "rgb(238, 238, 238)",
+          "rgb(222, 215, 215)"
+        ]
+      }
+    },
+    {
+      "id": "pg-building-train-station",
+      "type": "fill",
+      "source": "vstd",
+      "source-layer": "building",
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ],
+        [
+          "==",
+          "building",
+          "train_station"
         ]
       ],
       "paint": {
@@ -2219,7 +2250,7 @@
           ["linear"],
           ["zoom"],
           16, 1,
-          17, 0.7
+          17, 0.4
         ]
       }
     },
