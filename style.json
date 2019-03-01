@@ -2485,7 +2485,13 @@
         "match",
         ["get", "aeroway"],
         ["taxiway"],
-        true,
+        [
+          "match",
+          ["geometry-type"],
+          ["LineString", "MultiLineString"],
+          true,
+          false
+        ],
         false
       ],
       "layout": {
@@ -2512,7 +2518,13 @@
         "match",
         ["get", "aeroway"],
         ["runway"],
-        true,
+        [
+          "match",
+          ["geometry-type"],
+          ["LineString", "MultiLineString"],
+          true,
+          false
+        ],
         false
       ],
       "layout": {
