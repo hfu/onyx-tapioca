@@ -716,28 +716,22 @@
       "source": "vstd",
       "source-layer": "road",
       "filter": [
-        "all",
-        [
-          ">",
-          ["zoom"],
-          14
+        "match",
+        ["get", "highway"],
+        [ 
+          "path", "pedestrian", "footway", "cycleway", 
+          "living_street", "steps", "bridleway", "service"
         ],
+        false,
         [
-          "match",
-          ["get", "layer"],
-          ["-1"],
+          "case",
+          ["has", "layer"],
           false,
-          true
-        ],
-        [
-          "match",
-          ["get", "highway"],
-          [ 
-            "path", "pedestrian", "footway", "cycleway", 
-            "living_street", "steps", "bridleway", "service"
-          ],
-          false,
-          true
+          [
+            ">",
+            ["zoom"],
+            14
+          ]
         ]
       ],
       "layout": {
