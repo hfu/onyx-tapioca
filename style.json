@@ -40,6 +40,23 @@
       }
     },
     {
+      "id": "pg-structure",
+      "type": "fill",
+      "source": "vstd",
+      "source-layer": "structure",
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ]
+      ],
+      "paint": {
+        "fill-color": "rgb(255, 249, 196)"
+      }
+    },
+    {
       "id": "pg-nature",
       "type": "fill",
       "source": "vstd",
@@ -88,23 +105,6 @@
       ],
       "paint": {
         "fill-color": "rgba(197, 202, 233, 0.2)"
-      }
-    },
-    {
-      "id": "pg-structure",
-      "type": "fill",
-      "source": "vstd",
-      "source-layer": "structure",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Polygon"
-        ]
-      ],
-      "paint": {
-        "fill-color": "rgb(255, 249, 196)"
       }
     },
     {
