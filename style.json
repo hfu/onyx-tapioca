@@ -412,7 +412,7 @@
         ]
       ],
       "layout": {
-        "line-cap": "round",
+        "line-cap": "butt",
         "line-join": "round"
       },
       "paint": {
@@ -571,7 +571,13 @@
         false
       ],
       "paint": {
-        "line-color": "rgb(235, 235, 235)",
+        "line-color": [
+          "match",
+          ["get", "layer"],
+          ["-1"],
+          "rgb(245, 245, 245)",
+          "rgb(235, 235, 235)"
+        ],
         "line-width": [
           "interpolate",
           ["exponential", 2],
@@ -606,7 +612,13 @@
         false
       ],
       "paint": {
-        "line-color": "rgb(255, 255, 255)",
+        "line-color": [
+          "match",
+          ["get", "layer"],
+          ["-1"],
+          "rgb(245, 245, 245)",
+          "rgb(255, 255, 255)"
+        ],
         "line-width": [
           "interpolate",
           ["exponential", 2],
@@ -641,7 +653,13 @@
         false
       ],
       "paint": {
-        "line-color": "rgb(223, 208, 214)",
+        "line-color": [
+          "match",
+          ["get", "layer"],
+          ["-1"],
+          "rgb(245, 245, 245)",
+          "rgb(223, 208, 214)"
+        ],
         "line-width": [
           "interpolate",
           ["exponential", 2],
@@ -676,7 +694,13 @@
         false
       ],
       "paint": {
-        "line-color": "rgb(204, 184, 192)",
+        "line-color": [
+          "match",
+          ["get", "layer"],
+          ["-1"],
+          "rgb(245, 245, 245)",
+          "rgb(204, 184, 192)"
+        ],
         "line-width": [
           "interpolate",
           ["exponential", 2],
@@ -711,7 +735,13 @@
         false
       ],
       "paint": {
-        "line-color": "rgb(204, 184, 192)",
+        "line-color": [
+          "match",
+          ["get", "layer"],
+          ["-1"],
+          "rgb(245, 245, 245)",
+          "rgb(204, 184, 192)"
+        ],
         "line-width": [
           "interpolate",
           ["exponential", 2],
@@ -746,7 +776,13 @@
         false
       ],
       "paint": {
-        "line-color": "rgb(204, 122, 155)",
+        "line-color": [
+          "match",
+          ["get", "layer"],
+          ["-1"],
+          "rgb(245, 245, 245)",
+          "rgb(204, 122, 155)"
+        ],
         "line-width": [
           "interpolate",
           ["exponential", 2],
@@ -781,7 +817,13 @@
         false
       ],
       "paint": {
-        "line-color": "rgb(204, 122, 155)",
+        "line-color": [
+          "match",
+          ["get", "layer"],
+          ["-1"],
+          "rgb(245, 245, 245)",
+          "rgb(204, 122, 155)"
+        ],
         "line-width": [
           "interpolate",
           ["exponential", 2],
