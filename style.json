@@ -2488,6 +2488,10 @@
         true,
         false
       ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
       "paint": {
         "line-color": "rgb(166, 133, 162)",
         "line-width": [
@@ -2511,6 +2515,9 @@
         true,
         false
       ],
+      "layout": {
+        "line-cap": "square"
+      },
       "paint": {
         "line-color": "rgb(128, 102, 125)",
         "line-width": [
