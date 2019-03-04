@@ -2691,12 +2691,12 @@
         "text-font": [
           "sans"
         ],
-        "text-size": 10,
+        "text-size": 8,
         "text-field": "{name}",
         "text-optional": true
       },
       "paint": {
-        "text-color": "rgb(0, 0, 0)"
+        "text-color": "rgb(97, 97, 97)"
       }
     },
     {
