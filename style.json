@@ -2948,22 +2948,23 @@
       "source-layer": "building",
       "minzoom": 16,
       "filter": [
-        "all",
+        "match",
+        ["geometry-type"],
+        ["Polygon", "MultiPolygon"],
         [
-          "==",
-          "$type",
-          "Polygon"
+          "match",
+          ["get", "layer"],
+          ["-1", "-2", "-3", "-4", "-5"],
+          false,
+          [
+            "match",
+            ["get", "building"],
+            ["train_station", "roof"],
+            false,
+            true
+          ]
         ],
-        [
-          "!in",
-          "building",
-          "train_station", "roof"
-        ],
-        [
-          "!=",
-          "layer",
-          "-1"
-        ]
+        false
       ],
       "paint": {
         "fill-color": "rgb(131, 124, 124)",
@@ -2992,7 +2993,7 @@
         "fill-color": [
           "match",
           ["get", "layer"],
-          ["-1"],
+          ["-1", "-2", "-3", "-4", "-5"],
           "rgb(238, 238, 238)",
           "rgb(222, 215, 215)"
         ]
@@ -3020,7 +3021,7 @@
         "fill-color": [
           "match",
           ["get", "layer"],
-          ["-1"],
+          ["-1", "-2", "-3", "-4", "-5"],
           "rgb(238, 238, 238)",
           "rgb(222, 215, 215)"
         ],
