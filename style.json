@@ -3005,17 +3005,23 @@
       "source": "vstd",
       "source-layer": "building",
       "filter": [
-        "all",
+        "match",
+        ["geometry-type"],
+        ["Polygon", "MultiPolygon"],
         [
-          "==",
-          "$type",
-          "Polygon"
+          "match",
+          ["get", "building"],
+          ["train_station", "roof"],
+          true,
+          [
+            "match",
+            ["get", "public_transport"],
+            ["station"],
+            true,
+            false
+          ]
         ],
-        [
-          "in",
-          "building",
-          "train_station", "roof"
-        ]
+        false
       ],
       "paint": {
         "fill-color": [
