@@ -193,6 +193,28 @@
       }
     },
     {
+      "id": "pg-water-wetland",
+      "type": "fill",
+      "source": "vstd",
+      "source-layer": "water",
+      "filter": [
+        "match",
+        ["get", "natural"],
+        ["wetland"],
+        [
+          "match",
+          ["geometry-type"],
+          ["Polygon", "MultiPolygon"],
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "fill-color": "rgb(227, 242, 253)"
+      }
+    },
+    {
       "id": "ls-water",
       "type": "line",
       "source": "vstd",
@@ -215,24 +237,20 @@
       "source": "vstd",
       "source-layer": "water",
       "filter": [
-        "all",
+        "match",
+        ["get", "natural"],
+        ["wetland"],
+        false,
         [
-          "==",
-          "$type",
-          "Polygon"
+          "match",
+          ["geometry-type"],
+          ["Polygon", "MultiPolygon"],
+          true,
+          false
         ]
       ],
       "paint": {
-        "fill-color": [
-          "match",
-          [
-            "get",
-            "natural"
-          ],
-          "wetland",
-          "rgb(227, 242, 253)",
-          "rgb(187, 222, 251)"
-        ]
+        "fill-color": "rgb(187, 222, 251)"
       }
     },
     {
@@ -2306,6 +2324,332 @@
           "match",
           ["get", "layer"],
           "4",
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": "rgb(204, 122, 155)",
+        "line-width": [
+          "interpolate",
+          ["exponential", 2],
+          ["zoom"],
+          6,
+          1,
+          22,
+          360
+        ]
+      }
+    },
+    {
+      "id": "ls-road-case-5",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "road",
+      "filter": [
+        "all",
+        [
+          "==",
+          ["get", "layer"],
+          "5"
+        ],
+        [
+          ">",
+          ["zoom"],
+          14
+        ],
+        [
+          "match",
+          ["get", "highway"],
+          [ 
+            "path", "pedestrian", "footway", "cycleway", 
+            "living_street", "steps", "bridleway", "service"
+          ],
+          false,
+          true
+        ]
+      ],
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "highway"],
+          ["motorway"],
+          ["rgb", 204, 61, 118],
+          ["trunk", "motorway_link"],
+          ["rgb", 204, 61, 118],
+          ["primary", "trunk_link"],
+          ["rgb", 204, 122, 155],
+          ["secondary", "primary_link"],
+          ["rgb", 204, 122, 155],
+          ["tertiary", "secondary_link"],
+          ["rgb", 194, 172, 181],
+          ["road", "tertiary_link"],
+          ["rgb", 204, 204, 204],
+          ["residential", "track", "unclassified"],
+          ["rgb", 156, 121, 135],
+          ["rgb", 225, 225, 225]
+        ], 
+        "line-width": [
+          "interpolate",
+          ["exponential", 2],
+          ["zoom"],
+          6,
+          1,
+          22,
+          [
+            "match",
+            ["get", "highway"],
+            ["motorway"],
+            408,
+            ["trunk", "motorway_link"],
+            360,
+            ["primary", "trunk_link"],
+            360,
+            ["secondary", "primary_link"],
+            336,
+            ["tertiary", "secondary_link"],
+            336,
+            ["road", "tertiary_link"],
+            264,
+            ["residential", "track", "unclassified"],
+            240,
+            72
+          ]
+        ] 
+      }
+    },
+    {
+      "id": "ls-road-line-g-5",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        ["get", "highway"],
+        ["residential", "track", "unclassified"],
+        [
+          "match",
+          ["get", "layer"],
+          "5",
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": "rgb(235, 235, 235)",
+        "line-width": [
+          "interpolate",
+          ["exponential", 2],
+          ["zoom"],
+          6,
+          1,
+          22,
+          216
+        ]
+      }
+    },
+    {
+      "id": "ls-road-line-f-5",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        ["get", "highway"],
+        ["road", "tertiary_link"],
+        [
+          "match",
+          ["get", "layer"],
+          "5",
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": "rgb(255, 255, 255)",
+        "line-width": [
+          "interpolate",
+          ["exponential", 2],
+          ["zoom"],
+          6,
+          1,
+          22,
+          240
+        ]
+      }
+    },
+    {
+      "id": "ls-road-line-e-5",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        ["get", "highway"],
+        ["tertiary", "secondary_link"],
+        [
+          "match",
+          ["get", "layer"],
+          "5",
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": "rgb(223, 208, 214)",
+        "line-width": [
+          "interpolate",
+          ["exponential", 2],
+          ["zoom"],
+          6,
+          1,
+          22,
+          288
+        ]
+      }
+    },
+    {
+      "id": "ls-road-line-d-5",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        ["get", "highway"],
+        ["secondary", "primary_link"],
+        [
+          "match",
+          ["get", "layer"],
+          "5",
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": "rgb(204, 184, 192)",
+        "line-width": [
+          "interpolate",
+          ["exponential", 2],
+          ["zoom"],
+          6,
+          1,
+          22,
+          288
+        ]
+      }
+    },
+    {
+      "id": "ls-road-line-c-5",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        ["get", "highway"],
+        ["primary", "trunk_link"],
+        [
+          "match",
+          ["get", "layer"],
+          "5",
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": "rgb(204, 184, 192)",
+        "line-width": [
+          "interpolate",
+          ["exponential", 2],
+          ["zoom"],
+          6,
+          1,
+          22,
+          312
+        ]
+      }
+    },
+    {
+      "id": "ls-road-line-b-5",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        ["get", "highway"],
+        ["trunk", "motorway_link"],
+        [
+          "match",
+          ["get", "layer"],
+          "5",
+          true,
+          false
+        ],
+        false
+      ],
+      "paint": {
+        "line-color": "rgb(204, 122, 155)",
+        "line-width": [
+          "interpolate",
+          ["exponential", 2],
+          ["zoom"],
+          6,
+          1,
+          22,
+          312
+        ]
+      }
+    },
+    {
+      "id": "ls-road-line-a-5",
+      "type": "line",
+      "source": "vstd",
+      "source-layer": "road",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "filter": [
+        "match",
+        ["get", "highway"],
+        ["motorway"],
+        [
+          "match",
+          ["get", "layer"],
+          "5",
           true,
           false
         ],
