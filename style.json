@@ -3280,9 +3280,9 @@
         "text-offset": [
           "step",
           ["zoom"],
-          ["literal", [0, 0]],
+          ["literal", [0, -1]],
           17,
-          ["literal", [0, -0.5]]
+          ["literal", [0, 0]]
         ]
       },
       "paint": {
