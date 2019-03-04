@@ -3273,13 +3273,17 @@
       ],
       "layout": {
         "symbol-placement": "line",
-        "symbol-spacing": 2056,
-        "text-font": [
-          "sans"
-        ],
+        "text-font": [ "sans" ],
         "text-size": 8,
         "text-field": "{name}",
-        "text-optional": true
+        "text-optional": true,
+        "text-offset": [
+          "step",
+          ["zoom"],
+          ["literal", [0, 0]],
+          17,
+          ["literal", [0, -0.5]]
+        ]
       },
       "paint": {
         "text-color": "rgb(97, 97, 97)"
