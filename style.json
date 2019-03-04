@@ -3280,6 +3280,8 @@
         "text-offset": [
           "step",
           ["zoom"],
+          ["literal", [0, -0.5]],
+          16,
           ["literal", [0, -1]],
           17,
           ["literal", [0, 0]]
@@ -3295,12 +3297,11 @@
       "source": "vstd",
       "source-layer": "place",
       "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ]
+        "match",
+        ["geometry-type"],
+        ["Point", "MultiPoint"],
+        true,
+        false
       ],
       "layout": {
         "icon-image": [
