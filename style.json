@@ -2688,19 +2688,15 @@
       "layout": {
         "symbol-placement": "line",
         "symbol-spacing": 2056,
-        "symbol-avoid-edges": true,
         "text-font": [
           "sans"
         ],
-        "text-size": 7.5,
-        "text-max-width": 8,
+        "text-size": 10,
         "text-field": "{name}",
-        "text-offset": [ -0.15, -0.15],
-        "text-rotation-alignment": "viewport",
         "text-optional": true
       },
       "paint": {
-        "text-color": "#FFFFFF"
+        "text-color": "rgb(0, 0, 0)"
       }
     },
     {
