@@ -2674,32 +2674,6 @@
       }
     },
     {
-      "id": "ls-road-symbol",
-      "type": "symbol",
-      "source": "vstd",
-      "source-layer": "road",
-      "fiter": [
-        "match",
-        ["geometry-type"],
-        ["LineString", "MultiLineString"],
-        true,
-        false
-      ],
-      "layout": {
-        "symbol-placement": "line",
-        "symbol-spacing": 2056,
-        "text-font": [
-          "sans"
-        ],
-        "text-size": 8,
-        "text-field": "{name}",
-        "text-optional": true
-      },
-      "paint": {
-        "text-color": "rgb(97, 97, 97)"
-      }
-    },
-    {
       "id": "ls-railway-subway",
       "type": "line",
       "source": "vstd",
@@ -3283,6 +3257,32 @@
       "paint": {
         "circle-color": "rgb(183, 174, 174)",
         "circle-radius": 2
+      }
+    },
+    {
+      "id": "ls-road-symbol",
+      "type": "symbol",
+      "source": "vstd",
+      "source-layer": "road",
+      "fiter": [
+        "match",
+        ["geometry-type"],
+        ["LineString", "MultiLineString"],
+        true,
+        false
+      ],
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 2056,
+        "text-font": [
+          "sans"
+        ],
+        "text-size": 8,
+        "text-field": "{name}",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "rgb(97, 97, 97)"
       }
     },
     {
