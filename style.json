@@ -14,10 +14,6 @@
       ],
       "attribution": "OpenStreetMap contributors",
       "maxzoom": 15
-    },
-    "extent": {
-      "type": "geojson",
-      "data": "https://hfu.github.io/tapioca-extent/extent.geojson"
     }
   },
   "sprite": "https://hfu.github.io/unite-sprite/sprite",
@@ -3521,15 +3517,6 @@
       "paint": {
         "circle-color": "rgb(49, 27, 146)",
         "circle-radius": 2.5
-      }
-    },
-    {
-      "id": "extent",
-      "type": "line",
-      "source": "extent",
-      "paint": {
-        "line-color": "rgb(0, 150, 136)",
-        "line-width": 4
       }
     }
   ]
